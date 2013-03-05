@@ -153,6 +153,7 @@ class form {
   }
   
   function fieldcss($options) {
+    $css = array();
     if($options['type'])  $css[] = $options['type'];
     if($options['class']) $css[] = $options['class'];
     if($options['size'])  $css[] = $options['size'];
