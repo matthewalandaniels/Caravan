@@ -1,0 +1,43 @@
+﻿Title: Home
+
+----
+
+Herocaption: Testing Testing
+
+----
+
+Introtitle: Good Stories Deserve Great Storytelling
+
+----
+
+Introtext: Our philosophy has always been pretty simple. A good story always deserves a good 
+
+storyteller. Every worthwhile story has an audience waiting to listen, and to be moved. 
+
+Our passion is bringing those stories to life, and our approach takes on that development 
+
+from the first idea through the final cut. We believe in saying more with less. 
+
+We believe that partnership is best when it’s transparent. We’re never more flattered 
+
+than when our clients and agency partners bravely trust us with their stories and share 
+
+our love for creative collaboration. Look around, give us a call. We’d love to make 
+
+something together.
+
+----
+
+Showreelvimeolink: http://player.vimeo.com/video/36031564
+
+----
+
+Jacobbio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+
+----
+
+Jonbio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in.
+
+----
+
+Bernardobio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.

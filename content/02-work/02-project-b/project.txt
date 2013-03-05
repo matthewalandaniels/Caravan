@@ -1,0 +1,35 @@
+Categories: work, weddings, featured
+----
+Title: PROJECT B
+----
+Client: HALOGEN
+----
+VideoLink: http://player.vimeo.com/video/36031564
+----
+Description: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor ante leo, et aliquet 
+augue. Donec dictum tincidunt enim, non dictum libero cursus eget. Phasellus faucibus 
+tempor velit, vitae molestie arcu mattis a. Praesent ultricies tincidunt velit, sit 
+amet ullamcorper elit convallis id. Sed a ligula vitae mi fermentum dignissim sodales 
+sed dui. Duis sodales, ipsum nec egestas pharetra, felis augue tristique lorem, ac 
+vehicula odio velit vel sem. Praesent ultricies tincidunt velit, sit amet ullamcorper 
+elit convallis id. Sed a ligula vitae mi fermentum dignissim sodales sed dui. Duis 
+sodales. Praesent ultricies tincidunt velit, sit amet ullamcorper elit convallis id. 
+Sed a ligula vitae mi fermentum dignissim sodales sed dui. Duis sodales
+----
+Credits: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum tincidunt enim, 
+non dictum libero cursus Phasellus faucibus tempor velit, vitae molesti. Praesent 
+ultricies tincidunt velit, sit amet ullamcorper Sed a ligula vitae mi fermentum dignissim. 
+Donec dictum tincidunt enim, non dictum libero cursus Phasellus faucibus tempor velit, 
+vitae molesti.
+----
+AdditionalVideoTitle: 30 SECOND PROMO
+----
+AdditionalVideoLink: http://player.vimeo.com/video/51281742?title=0&byline=0&portrait=0&color=cf5312
+----
+IsFeatured: Yes
+----
+IsWedding: Yes

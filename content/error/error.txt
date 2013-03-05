@@ -1,0 +1,5 @@
+Title: Error
+----
+ErrorMessage:
+
+Woops, looks like the requested page doesn't exist. Click <a href='/'>here</a> to head back to the home page.

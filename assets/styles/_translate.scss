@@ -1,0 +1,6 @@
+@mixin translate($distanceX, $distanceY) {
+    -webkit-transform: translate($distanceX, $distanceY);
+    -moz-transform: translate($distanceX, $distanceY);
+    -o-transform: translate($distanceX, $distanceY);
+    transform: translate($distanceX, $distanceY);
+  }

@@ -1,0 +1,33 @@
+﻿Title: Weddings
+
+----
+
+Introtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+----
+
+Introtext: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor ante leo, et aliquet augue. Donec dictum tincidunt enim, non dictum libero cursus eget. Phasellus faucibus tempor velit, vitae molestie arcu mattis a. Praesent ultricies tincidunt velit, sit amet ullamcorper elit convallis id. Sed a ligula vitae mi fermentum dignissim sodales sed dui. Duis sodales, ipsum nec egestas pharetra, felis augue tristique lorem, ac vehicula odio velit vel sem. Duis malesuada mollis lorem, quis porta leo malesuada a. Nam pretium ultrices velit, sed elementum tellus vulputate vel.
+
+----
+
+Weddingsreel: http://player.vimeo.com/video/36031564
+
+----
+
+Leadin: We do our best to blow you away without breaking the bank.
+
+----
+
+Bookinginfopitch: Because every wedding is different, we don’t offer one-size-fits-all, 
+cookie-cutter pricing — but don’t worry, that’s not code for “you can’t afford us.” Our prices start at just $3,000. Here are just a few of the many things we offer:
+
+- Trailer (30 second tease)
+- Short Film (4-5 minute highlight)
+- Feature Film (14-15 minute feature)
+- Multi-Camera Edit, Ceremony &amp Reception Toasts
+- Rehearsal Dinner Coverage
+- Video Booth
+
+----
+
+Contactsubmitmessage: Thank you, we'll get back to you shortly!

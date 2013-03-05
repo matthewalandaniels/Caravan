@@ -1,0 +1,15 @@
+Title: Caravan A Cinema Co.
+----
+Description: Site description
+----
+Keywords: video,keywords
+----
+ContactPhone: (704) 313-9222
+----
+ContactEmail: Hello@WeAreCaravan.com
+----
+ContactAddressL1: 9700 Southern Pines Blvd.
+----
+ContactAddressL2: Charlotte NC 28273
+----
+GoogleMapsURL: https://maps.google.com/maps?q=9700+Southern+Pines+Blvd.+Charlotte+NC+28273&ie=UTF-8&hq=&hnear=0x88569be6cb46c2d9:0x30b763712b076c1b,9700+Southern+Pine+Blvd,+Charlotte,+NC+28273&gl=us&ei=gUIdUc_VFNHgigLlgIGIDA&ved=0CDMQ8gEwAA

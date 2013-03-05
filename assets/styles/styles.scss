@@ -1,0 +1,749 @@
+
+
+//----IMPORTS
+/////////////////////////////////////////////////////////////////////
+@import "border-radius";
+@import "reset";
+@import "transition";
+@import "global-variables";
+@import "transition";
+@import "translate";
+@import "border-box";
+
+//----STYLES
+/////////////////////////////////////////////////////////////////////
+
+body {
+	background: $grey;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 11pt;
+	letter-spacing: .05em;
+	line-height: 170%;
+	color: $textGrey;
+	padding-top:65px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 {
+	display: inline-block;
+	font-size: 20pt;
+	letter-spacing: .1em;
+	padding-bottom: 8px;
+	margin-bottom: $spacing2;
+	border-bottom: 1px solid $textGrey;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 16pt;
+	font-weight: 600;
+	margin-bottom: 1em;
+	letter-spacing: .1em;
+}
+
+#header {
+	position: fixed;
+	background: $orange;
+	top: 0;
+	width: 100%;
+	min-width: 960px;
+	height: 65px;
+	overflow: auto;
+	z-index: 1;
+}
+
+#logo {
+	float: left;
+	position: relative;
+	top: 16px;
+	left: 45px;
+}
+
+#nav {
+	float: right;
+	position: relative;
+	right: 45px;
+	line-height: 65px;
+	text-transform: uppercase;
+		a {
+			color: white;
+			font-size: 10.4pt;
+			font-weight: 700;
+			letter-spacing: .3em;
+			margin-left: 15px;
+			padding: 20px 20px;
+			@include transition(color, .2s);
+		}
+		.current {
+			color: $darkOrange;
+		}
+		a:hover {
+			color: $darkOrange;
+		}
+}
+
+section {
+	padding: $spacing1 0;
+	min-width: 960px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#heroImage {
+	width: 100%;
+	height: 550px;
+	background-image: url(../images/heroImage.jpg);
+	background-size: cover;
+	background-position: no-repeat top center;
+	overflow: auto;
+}
+
+.workHero, #weddingsHero {
+	position: relative;
+	width: 100%;
+	height: 450px;
+	overflow: hidden;
+}
+
+#weddingsHero{
+	background-size: cover;
+	background-position: center;
+}
+#weddingsHero {
+	background-image: url(../images/weddingsHero.jpg);
+}
+
+a.bigButton {
+	background: $orange;
+	display: table;
+	color: white;
+	font-size: 14pt;
+	font-weight: 700;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	line-height: 70px;
+	padding: 0 30px;
+	margin: 55px auto 0 auto;
+	@include border-radius;
+	@include transition(all, .2s);
+	span {
+		width: 26px;
+		height: 26px;
+		display: inline-block;
+		position: relative;
+		top: 6px;
+		margin-right: 15px;
+		background: url(../images/sprite_sheet.png) no-repeat;
+		background-position: -325px -140px;
+	}
+}
+
+a.bigButton:hover, .button:hover {
+	background: $orangeHighlight;
+}
+
+.button {
+	background: $orange;
+	display:table;
+	color: white;
+	text-transform: uppercase;
+	font-size: 12pt;
+	font-weight: 700;
+	letter-spacing: .2em;
+	line-height: 50px;
+	padding: 0 30px;
+	margin: 0 auto;
+	@include border-radius;
+	@include transition(all, .2s);
+	span {
+		display: inline-block;
+		margin-left: 15px;
+		width: 10px;
+		height: 11px;
+		background: url(../images/sprite_sheet.png) no-repeat;
+		background-position: -365px -164px;
+	}
+}
+
+.playButton {
+	display: block;
+	width: 85px;
+	height: 85px;
+	margin: 40px auto 0 auto;
+	text-indent: 100%;
+	overflow: hidden;
+	background: url(../images/sprite_sheet.png);
+	background-position: -240px -140px;
+	opacity: 1;
+	@include transition(all, 100ms);
+}
+.playButton:hover {
+	opacity: .8;
+}
+
+#projectHero {
+	position: absolute;
+	width: 100%;
+	min-width: 960px;
+	top: 0;
+	z-index: -1;
+}
+
+#mainTitle, #workTitle{
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#mainTitle {
+	font-size: 34pt;
+	margin-top: 170px;
+	line-height: 150%;
+	letter-spacing: .2em;
+}
+
+#workTitle {
+	font-size: 32pt;
+	margin-top: 140px;
+	line-height: 130%;
+	letter-spacing: .15em;
+}
+
+section#intro {
+	background: $darkGrey;
+	text-align: center;
+	.wrapper {
+		max-width: 825px;
+	}
+}
+
+section#projectDetails {
+	background: $darkGrey;
+	.description {
+		width: 550px;
+		float: left;
+	}
+	.credits {
+		width: 386px;
+		float: right;
+	}
+	.title {
+		font-size: 20pt;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+}
+
+#promotionLinks{
+	height: 15px;
+	border-bottom: 1px solid $textGrey;
+	width: 100%;
+	margin-bottom: 70px;
+}
+
+#likeLinks {
+	margin-top: 25px;
+	.twitter-share-button, .fb-like {
+		margin-right: 15px;
+	}
+	.fb-like {
+		position: relative;
+		top: -4px;
+	}
+
+}
+
+#contactSocialLinks {
+	margin: 50px auto 0 auto;
+	a+a {
+		margin-left: 30px;
+	}
+}
+
+#promotionLinksContainer {
+	background: $darkGrey;
+	padding: 0 15px;
+	margin: 0 auto;
+	a+a {
+		margin-left: 25px;
+	}
+}
+
+#promotionLinksContainer, #contactSocialLinks {
+	display: table;
+	a {
+		display: block;
+		float: left;
+		position: relative;
+		width: 30px;
+		height: 30px;
+	}
+	span {
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		opacity: 0;
+	}
+	span:hover {
+		opacity: 1;
+		@include transition(opacity, .2s);
+	}
+	.twitter, .facebook, .pintrest, .vimeo, .instagram, span {
+		background: url(../images/sprite_sheet.png);
+	}
+	.twitter {
+		background-position: -90px -170px;
+		span {
+			background-position: -90px -140px;
+		}
+	}
+	.facebook {
+		background-position: -30px -170px;
+		span {
+			background-position: -30px -140px;
+		}
+	}
+	.pintrest {
+		background-position: 0px -170px;
+		span {
+			background-position: 0px -140px;
+		}
+	}
+	.vimeo {
+		background-position: -120px -170px;
+		span {
+			background-position: -120px -140px;
+		}
+	}
+	.instagram {
+		background-position: -60px -170px;
+		span {
+			background-position: -60px -140px;
+		}
+	}
+}
+
+section#productionImages {
+	background: $grey;
+	text-align: center;
+	iframe {
+		display: block;
+		margin: 0 auto 70px auto;
+	}
+	#container {
+		width: 960px;
+		margin: 0 auto;
+	}
+}
+
+section#contactDetails {
+	background: $grey;
+}
+
+#contactDetailsContainer {
+	display: table;
+  	margin: 0 auto;
+  	a {
+		color: $textGrey;
+		@include transition (color, .2s);
+	}
+	a:hover {
+		color: $orange;
+	}
+}
+
+#contactPhone, #contactEmail, #contactLocation {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 15pt;
+  letter-spacing: .1em;
+  line-height: 150%;
+  .icon {
+	  display: inline-block;
+	  position: relative;
+	  margin-right: 15px;
+	  background: url(../images/sprite_sheet.png) no-repeat;
+	}
+}
+
+#contactPhone {
+	.icon {
+		top: 4px;
+		width: 16px;
+		height: 22px;
+		background-position: -325px -186px;
+	}
+}
+
+#contactEmail {
+	margin: 0 50px;
+	.icon {
+		width: 20px;
+		height: 14px;
+		background-position: -341px -186px;
+	}
+}
+
+#contactLocation {
+	.icon {
+		top: 4px;
+		width: 15px;
+		height: 21px;
+		background-position: -361px -186px;
+	}
+}
+
+#contactEmail, #contactPhone {
+	bottom: 13px;
+}
+
+section#contactQuotes {
+	background: $blue;
+	text-align: center;
+	color: $darkBlue;
+	h1 {
+		border-color: $darkBlue;
+	}
+	.row {
+		max-width: 840px;
+		margin: 0 auto;
+		overflow: auto;
+		margin-bottom: 50px;
+	}
+	#last {
+		margin-bottom: 0px;
+		}
+	.quote {
+		@include border-box;
+		float: left;
+		width: 420px;
+		padding: 0 30px;
+		text-align: left;
+		font-style: italic;
+		.name {
+			display: block;
+			font-weight: 700;
+			text-align: right;
+		}
+	}
+}
+
+section#bookingInfo {
+	text-align: center;
+	background: $darkGrey;
+	.wrapper {
+		overflow: auto;
+		padding: 0;
+	}
+	.text {
+		text-align: left;
+		float: left;
+		width: 468px;
+	}
+	ul {
+		margin: 30px 0;
+		list-style-type: disc; 
+		list-style-position: inside;
+	}
+	.important {
+		font-weight: 700;
+	}
+	a {
+		color: $textGrey;
+	}
+	a:hover {
+		color: $orange;
+	}
+}
+
+.leadIn {
+	font-size: 15pt;
+	font-weight: 600;
+	line-height: 160%;
+	margin-bottom: 30px;
+}
+
+#contactForm {
+	text-align: left;
+	float: right;
+	input, textarea {
+		color: $textGrey;
+		background-color: $grey;
+		@include border-box;
+		width: 450px;
+		margin-bottom: 20px;
+		padding: 10px;
+		@include border-radius;
+		@include transition(background, .2s);
+	}
+	input {
+		height: 40px;
+	}
+	textarea {
+		resize: none;
+	}
+	input:focus, textarea:focus {
+		outline: none;
+		background: white;
+	}
+	.button {
+		width: 450px;
+		cursor: pointer;
+	}
+
+}
+
+section#weddingCallout {
+	background: $grey;
+}
+
+section#featuredWork {
+	background: $grey;
+	text-align: center;
+		.wrapper {
+			margin-bottom: $spacing2;
+			overflow: auto;
+		}
+}
+
+section#work {
+	background: $grey;
+	text-align: center;
+		.wrapper {
+			overflow: auto;
+		}
+}
+
+
+//------------thumbnails----------------------------------
+
+.workThumb, .productionThumb {
+	position: relative;
+	width: 320px;
+	float: left;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	img {
+		display: block;
+  	}
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($orange, 0.8);
+	opacity: 0;
+	@include transition (all, .2s);
+	.text, .more, .couple {
+		position: relative;
+		text-align: center;
+		opacity: 0;
+		@include transition (all, .5s);
+	}
+	.text {
+		@include border-box;
+		width: 100%;
+		top: 42%;
+		padding: 0 20px;
+	}
+	.more {
+		display: inline-block;
+		top: 49%;
+		width: 24px;
+		height: 24px;
+		background: url(../images/sprite_sheet.png) no-repeat;
+		background-position: -351px -140px;
+	}
+	.couple {
+		top: 49%;
+	}
+	.client, .couple {
+		font-weight: 700;
+		font-size: 14pt;
+	}
+	.title {
+		margin-top: 8px;
+		font-weight: 600;
+	}
+}
+.overlay:hover {
+  	opacity: 1;
+}
+
+.overlay:hover .text, .overlay:hover .more, .overlay:hover .couple {
+	@include translate (0,-10px);
+	opacity: 1;
+}
+
+
+//----------------------------------------------
+
+#projButtonPrev, #projButtonNext {
+	position: fixed;
+	top: 260px;
+	height: 50px;
+	background: $blue;
+	display:table;
+	color: white;
+	text-transform: uppercase;
+	font-size: 12pt;
+	font-weight: 700;
+	letter-spacing: .2em;
+	line-height: 50px;
+	@include transition(all, .2s, 100ms);
+	span {
+		display: inline-block;
+		position: absolute;
+		width: 13px;
+		height: 20px;
+		top: 15px;
+}
+}
+#projButtonPrev:hover, #projButtonNext:hover {
+	@include translate(0, 0);
+}
+
+#projButtonPrev {
+	@include translate(-239px, 0);
+	@include border-radii(0, 4px, 4px, 0);
+	padding: 0 60px 0 30px;
+	span {
+		right: 20px;
+		background: url(../images/sprite_sheet.png) no-repeat;
+		background-position: -325px -166px;
+	}
+}
+#projButtonNext {
+	right: 0;
+	@include translate(190px, 0);
+	@include border-radii(4px, 0, 0, 4px);
+	padding: 0 30px 0 60px;
+	span {
+		left: 20px;
+		background: url(../images/sprite_sheet.png) no-repeat;
+		background-position: -338px -166px;
+	}
+}
+
+section#aboutCaravan {
+	background: $darkGrey;
+	text-align: center;
+	.profile+.profile {
+		margin-left: 24px;
+	}
+	.profile {
+		float: left;
+		width: 304px;
+	}
+		img {
+			@include border-radius (1000px);
+			margin-bottom: 50px;
+		}
+		.name {
+			font-size: 16pt;
+			font-weight: 600;
+			letter-spacing: .1em;
+			margin-bottom: 30px;
+		}
+}
+
+section#referral {
+	background: $blue;
+	p {
+		font-size: 16pt;
+		letter-spacing: .15em;
+		text-transform: uppercase;
+		text-align: center;
+		color: $darkBlue;
+		margin-bottom: 40px;
+	}
+	.button {
+		background: $darkBlue;
+	}
+	a.button:hover {
+		background: $darkBlueHighlight;
+	}
+	span {
+		position: relative;
+		width: 13px;
+		height: 17px;
+		background-position: -375px -140px;
+		top: 3px;
+	}
+}
+
+section#socialFooter {
+	background: $blue;
+	text-align: center;
+	a+a {
+		margin-left: 70px;
+	}
+	.twitter, .facebook, .vimeo, .pintrest, .email, .instagram {
+		display: inline-block;
+		position: relative;
+		width: 70px;
+		height: 70px;
+		background: url(../images/sprite_sheet.png) no-repeat;
+		text-indent: -9999px;
+	}
+	span {
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		background: url(../images/sprite_sheet.png) no-repeat;
+		opacity: 0;
+		@include transition(all, .2s);
+	}
+	span:hover {
+ 		opacity: 1;
+ 	}
+ 	.twitter {
+		background-position: -210px -70px;
+		span {
+			background-position: -210px 0px;	
+ 		}
+	}
+	.facebook {
+		background-position: -70px -70px;
+		span {
+			background-position: -70px 0px;	
+ 		}
+	}
+	.vimeo {
+		background-position: -280px -70px;
+		span {
+			background-position: -280px 0px;	
+ 		}
+	}
+	.email {
+		background-position: -350px -70px;
+		span {
+			background-position: -350px 0px;	
+ 		}
+	}
+}
+
+section#footer {
+	background: $darkGrey;
+	padding: 22px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 8pt;
+	letter-spacing: .2em;
+}
+
+
