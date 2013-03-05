@@ -479,6 +479,12 @@ section#bookingInfo {
     width: 450px;
     cursor: pointer; }
 
+.submitMessage {
+  text-align: center;
+  font-size: 20pt;
+  font-weight: 600;
+  padding-top: 34px; }
+
 section#weddingCallout {
   background: #f3f3f3; }
 
