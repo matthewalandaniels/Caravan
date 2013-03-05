@@ -51,19 +51,19 @@
       <h1>About Caravan</h1>
       <div class="wrapper">
         <div class="profile">
-          <img src="/assets/images/jacob.jpg" />
+          <img src="<?php echo url('assets/images/jacob.jpg') ?>">
           <p class="name">Jacob Lewis</p>
           <p class-"bio"><?php echo html($page->jacobbio()) ?></p>
         </div>
 
         <div class="profile">
-          <img src="/assets/images/jon.jpg" />
+          <img src="<?php echo url('assets/images/jon.jpg') ?>">
           <p class="name">Jon Muedder</p>
           <p class-"bio"><?php echo html($page->jonbio()) ?></p>
         </div>
 
         <div class="profile">
-          <img src="/assets/images/bernardo.jpg" />
+          <img src="<?php echo url('assets/images/bernardo.jpg') ?>">
           <p class="name">Bernardo Marentes</p>
           <p class-"bio"><?php echo html($page->bernardobio()) ?> </p>
         </div>
