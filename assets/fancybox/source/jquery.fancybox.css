@@ -110,7 +110,7 @@
 .fancybox-nav {
 	position: absolute;
 	top: 0;
-	width: 40%;
+	width: 72%;
 	height: 100%;
 	cursor: pointer;
 	text-decoration: none;
@@ -120,11 +120,13 @@
 }
 
 .fancybox-prev {
-	left: 0px;
+	/* background: rgba(0, 54, 54, 0.7); /* blue */
+	left: -70px;
 }
 
 .fancybox-next {
-	right: 0px;
+	/* background: rgba(220, 54, 54, 0.7); /* red */
+	right: -70px;
 }
 
 .fancybox-nav span {
@@ -139,12 +141,12 @@
 }
 
 .fancybox-prev span {
-	left: -60px;
+	left: 10px;
 	background-position: 0 -24px;
 }
 
 .fancybox-next span {
-	right: -60px;
+	right: 10px;
 	background-position: 0 -47px;
 }
 
