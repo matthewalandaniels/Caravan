@@ -4,13 +4,16 @@ files: true
 fields:
 
   categories:
-    label: Where the project should be displayed
-    type: multicheckbox
+    label: What type of project is this?
+    type: radio
     default: work
     options:
-      work: "Work" page 
-      weddings: "Weddings" page
-      featured: "Featured" section 
+      work: Commercial
+      weddings: Wedding
+  
+  featured:
+    label: Featured project
+    type: checkbox
 
   title:
     label: Title

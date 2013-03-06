@@ -6,7 +6,7 @@ fields:
   title: 
     label: Title
     type:  text
-  heroCaption: 
+  herocaption: 
     label: Hero Caption
     type:  text
   introtitle: 
