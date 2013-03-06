@@ -73,7 +73,7 @@
     <?php if ( $page->hasNextVisible() ): ?>    
         <a href="<?php echo $page->nextVisible()->url() ?>" id="projButtonNext"><span></span>Next Project</a>
     <?php endif ?>
-    
+
     <script>
       window.onload = function() {
         var wall = new Masonry( document.getElementById('container'), {
@@ -99,6 +99,6 @@
     });
     </script>
 
-	<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>        
+	<!--<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>-->
 
 <?php snippet('footer') ?>
