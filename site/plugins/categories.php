@@ -53,7 +53,7 @@ function getPrevMatchCategory($pages, $category) {
             // search from NEXT project to end
             $subSet = $pageSet->slice(0, $i-1)->filterBy('categories', $category);
             if ($subSet->count() > 0) {
-                return $subSet->first();
+                return $subSet->last();
             }
         }
     }
