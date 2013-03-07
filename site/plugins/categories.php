@@ -46,7 +46,7 @@ function getPrevMatchCategory($pages, $category) {
     // Get all projects (children of /work)
     $pageSet = $pages->find('work')->children()->visible();
 
-    // Find the current page, then try to locate a matching page AFTER it
+    // Find the current page, then try to locate a matching page BEFORE it
     foreach($pageSet as $page) {
         $i++;
         if ($page->isActive()) {
