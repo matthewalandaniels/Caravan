@@ -66,12 +66,29 @@
       <script src="<?php echo url('assets/javascript/masonry.min.js') ?>"></script>
     </section>
 
-    <?php if ( $page->hasPrevVisible() ): ?>
-    	<a href="<?php echo $page->prevVisible()->url() ?>" id="projButtonPrev">Previous Project<span></span></a>
+    <?php
+        // if this is a wedding, display only weddings ('weddings')
+        if (hasCategory('weddings', $page->categories())) {
+            $prev = getPrevMatchCategory($pages, 'weddings');
+        }elseif (hasCategory('work', $page->categories())) { // else, if this is a commercial work, try to find next commercial project
+            $prev = getPrevMatchCategory($pages, 'work');
+        }
+    ?>
+    <?php if ($prev): ?>
+    	<a href="<?php echo $prev->url() ?>" id="projButtonPrev">Previous Project<span></span></a>
     <?php endif ?>
 
-    <?php if ( $page->hasNextVisible() ): ?>    
-        <a href="<?php echo $page->nextVisible()->url() ?>" id="projButtonNext"><span></span>Next Project</a>
+    <?php
+    // if this is a wedding display only weddings ('weddings')
+    if (hasCategory('weddings', $page->categories())) {
+        $next = getNextMatchCategory($pages, 'weddings');
+    }elseif (hasCategory('work', $page->categories())) { // if this is a commercial work, find next commercial project
+        $next = getNextMatchCategory($pages, 'work');
+    }
+    ?>
+
+    <?php if ($next): ?>
+        <a href="<?php echo $next->url() ?>" id="projButtonNext"><span></span>Next Project</a>
     <?php endif ?>
 
     <script>
