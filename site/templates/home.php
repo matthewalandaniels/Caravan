@@ -2,7 +2,7 @@
 <?php snippet('menu') ?>
 <?php //snippet('submenu') ?>
 
-    <div id="heroImage">
+    <div id="homeHero">
       <p id="mainTitle"><?php echo html($page->herocaption()) ?></p>
       <a href="<?php echo $page->showreelvimeolink() ?>" class="fancybox-media bigButton" title="2013 Showreel"><span></span>2013 Showreel</a>
     </div>

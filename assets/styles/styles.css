@@ -124,26 +124,34 @@ section {
   margin: 0 auto;
   width: 960px; }
 
-#heroImage {
+#homeHero, #weddingsHero {
   width: 100%;
+  min-width: 960px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: no-repeat top center; }
+
+#weddingsHero, .projectHero {
+  height: 450px; }
+
+#homeHero {
   height: 550px;
-  background-image: url(../images/heroImage.jpg);
-  background-size: cover;
-  background-position: no-repeat top center;
-  overflow: auto; }
-
-.workHero, #weddingsHero {
-  position: relative;
-  width: 100%;
-  height: 450px;
-  overflow: hidden; }
-
-#weddingsHero {
-  background-size: cover;
-  background-position: center; }
+  background-image: url(../images/heroImage.jpg); }
 
 #weddingsHero {
   background-image: url(../images/weddingsHero.jpg); }
+
+.projectHero {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+#projectHeroImage {
+  position: absolute;
+  width: 100%;
+  min-width: 960px;
+  top: 0;
+  z-index: -1; }
 
 a.bigButton {
   background: #cf5e12;
@@ -219,13 +227,6 @@ a.bigButton:hover, .button:hover {
 
 .playButton:hover {
   opacity: .8; }
-
-#projectHero {
-  position: absolute;
-  width: 100%;
-  min-width: 960px;
-  top: 0;
-  z-index: -1; }
 
 #mainTitle, #workTitle {
   color: white;

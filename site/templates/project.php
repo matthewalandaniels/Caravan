@@ -16,11 +16,11 @@
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	<!--============================-->
 
-    <div class="workHero">
+    <div class="projectHero">
       <p id="workTitle"><?php echo $page->title() ?></p>
       <a href="<?php echo html($page->videolink()) ?>" class="fancybox-media playButton" title="<?php echo $page->title() ?>">Play</a>
       <?php if ( $page->children()->find('hero_image') ): ?>
-      <img src="<?php echo $page->children()->find('hero_image')->files()->first()->url() ?>" id="projectHero" style=""/>
+      <img src="<?php echo $page->children()->find('hero_image')->files()->first()->url() ?>" id="projectHeroImage" style=""/>
       <?php endif ?>
     </div>
     
