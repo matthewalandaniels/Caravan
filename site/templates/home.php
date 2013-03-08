@@ -14,9 +14,6 @@
       </div>
     </section>
     
-    <?php // @todo Convert to dynamic/CMS ?>
-    <?php // ---------------------------- ?>
-    
     <section id="featuredWork" class="clearfix">
           
       <h1>Featured Work</h1>
@@ -24,7 +21,7 @@
       <div class="wrapper" .class="clearfix">        
 
         <?php foreach($pages->find('work')->children()->visible() as $p): ?>
-		<?php if ( hasCategory('featured', $p->categories()) ): ?>
+		<?php if ( $p->featured() == 'on' ): ?>
 
 			<a href="<?php echo $p->url() ?>" class="workThumb">
 			  <img src="<?php echo $p->children()->find('thumb_image')->files()->first()->url() ?>" alt=""/>
