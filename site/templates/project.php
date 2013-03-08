@@ -47,7 +47,7 @@
 
     <section id="productionImages" class="clearfix">
       
-      <?php if ( $page->additionalvideotitle() && $page->additionalvideolink() ): ?>
+      <?php if ( $page->additionalvideotitle() != '' && $page->additionalvideolink() != '' ): ?>
       <h1><?php echo $page->additionalvideotitle() ?></h1>
       <iframe src="<?php echo html($page->additionalvideolink()) ?>" width="796" height="447" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 	  <?php endif ?>      
