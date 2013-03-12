@@ -26,10 +26,10 @@
 			<a href="<?php echo $p->url() ?>" class="workThumb">
 			  <img src="<?php echo $p->children()->find('thumb_image')->files()->first()->url() ?>" alt=""/>
 			  <div class="overlay">
-				<div class="text">
-				  <p class="client"><?php echo html($p->client()) ?></p>
-				  <p class="title"><?php echo html($p->title()) ?></p>
-				</div>
+  				<div class="text">
+  				  <p class="client"><?php echo html($p->client()) ?></p>
+  				  <p class="title"><?php echo html($p->title()) ?></p>
+  				</div>
 			  </div>
 			</a>
 
