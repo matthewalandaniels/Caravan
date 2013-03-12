@@ -31,3 +31,15 @@ fields:
   contactsubmitmessage:
     label: Contact form thank you message
     type: text
+  quotetext1:
+    label: First Quote (text)
+    type: text
+  quotename1:
+    label: First Quote (name)
+    type: text
+  quotetext2:
+    label: Second Quote (text)
+    type: text
+  quotename2:
+    label: Second Quote (name)
+    type: text

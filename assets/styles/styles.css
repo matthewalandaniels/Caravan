@@ -396,32 +396,35 @@ section#contactDetails {
 #contactEmail, #contactPhone {
   bottom: 13px; }
 
-section#contactQuotes {
-  background: #acc9c7;
-  text-align: center;
-  color: #5a6d69; }
-  section#contactQuotes h1 {
-    border-color: #5a6d69; }
-  section#contactQuotes .row {
+section#contactQuotes, #weddingQuotes {
+  text-align: center; }
+  section#contactQuotes .row, #weddingQuotes .row {
     max-width: 840px;
     margin: 0 auto;
     overflow: auto;
     margin-bottom: 50px; }
-  section#contactQuotes #last {
+  section#contactQuotes #last, #weddingQuotes #last {
     margin-bottom: 0px; }
-  section#contactQuotes .quote {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    float: left;
-    width: 420px;
-    padding: 0 30px;
-    text-align: left;
-    font-style: italic; }
-    section#contactQuotes .quote .name {
-      display: block;
-      font-weight: 700;
-      text-align: right; }
+
+section#contactQuotes {
+  background: #acc9c7;
+  color: #5a6d69; }
+  section#contactQuotes h1 {
+    border-color: #5a6d69; }
+
+.quote {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  float: left;
+  width: 420px;
+  padding: 0 30px;
+  text-align: left;
+  font-style: italic; }
+  .quote .name {
+    display: block;
+    font-weight: 700;
+    text-align: right; }
 
 section#bookingInfo {
   text-align: center;

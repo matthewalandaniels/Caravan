@@ -53,6 +53,18 @@
       </div>
     </section>
 
+    <section id="weddingQuotes">
+      <h1>Happy Customers</h1>
+        <div class="row" id="last">
+          <p class="quote">“<?php echo html($page->quotetext1) ?>”
+          <span class="name">- <?php echo $page->quotename1 ?></span>
+          </p>
+          <p class="quote">“<?php echo html($page->quotetext2) ?>”
+          <span class="name">- <?php echo $page->quotename2 ?></span>
+          </p>
+        </div>
+    </section>
+
     <section id="referral">
       <p>We’ll give you $100 for every wedding we book with your referral</p>
       <a href="/assets/download/referrals.pdf" class="button">Download this PDF For More Info<span></span></a>

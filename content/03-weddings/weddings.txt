@@ -31,3 +31,19 @@ cookie-cutter pricing — but don’t worry, that’s not code for “you can’
 ----
 
 Contactsubmitmessage: Thank you, we'll get back to you shortly!
+
+----
+
+Quotetext1: Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+----
+
+Quotename1: Matt Daniels
+
+----
+
+Quotetext2: Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+----
+
+Quotename2: Happy Customer

@@ -412,13 +412,8 @@ section#contactDetails {
 	bottom: 13px;
 }
 
-section#contactQuotes {
-	background: $blue;
+section#contactQuotes, #weddingQuotes {
 	text-align: center;
-	color: $darkBlue;
-	h1 {
-		border-color: $darkBlue;
-	}
 	.row {
 		max-width: 840px;
 		margin: 0 auto;
@@ -428,18 +423,27 @@ section#contactQuotes {
 	#last {
 		margin-bottom: 0px;
 		}
-	.quote {
-		@include border-box;
-		float: left;
-		width: 420px;
-		padding: 0 30px;
-		text-align: left;
-		font-style: italic;
-		.name {
-			display: block;
-			font-weight: 700;
-			text-align: right;
-		}
+}
+
+section#contactQuotes {
+	background: $blue;
+	color: $darkBlue;
+	h1 {
+		border-color: $darkBlue;
+	}
+}
+
+.quote {
+	@include border-box;
+	float: left;
+	width: 420px;
+	padding: 0 30px;
+	text-align: left;
+	font-style: italic;
+	.name {
+		display: block;
+		font-weight: 700;
+		text-align: right;
 	}
 }
 
