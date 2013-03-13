@@ -30,11 +30,13 @@ Sed a ligula vitae mi fermentum dignissim sodales sed dui. Duis sodales
 
 ----
 
-Credits: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum tincidunt enim, 
-non dictum libero cursus Phasellus faucibus tempor velit, vitae molesti. Praesent 
-ultricies tincidunt velit, sit amet ullamcorper Sed a ligula vitae mi fermentum dignissim. 
-Donec dictum tincidunt enim, non dictum libero cursus Phasellus faucibus tempor velit, 
-vitae molesti.
+Credits: **One**- Fusce Ipsum
+**Two**- Fusce Ipsum
+**Three**- Fusce Ipsum
+
+- Thing
+- other thing
+- third thing
 
 ----
 

@@ -39,7 +39,7 @@
         </div>
         <div class="credits">
           <p class="title">Credits</p>
-          <p class="text"><?php echo multiline( $page->credits() ) ?>
+          <p class="text"><?php echo kirbytext($page->credits()) ?>
           </p>
         </div>
       </div>

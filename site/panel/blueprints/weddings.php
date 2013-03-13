@@ -27,7 +27,6 @@ fields:
     buttons: 
       - bold
       - italic
-    help: This will also appear next to the contact form. You can optionally use <p>, <ul> and <li> HTML tags to format.
   contactsubmitmessage:
     label: Contact form thank you message
     type: text

@@ -35,7 +35,10 @@ fields:
   credits:
     label: Credits
     type: textarea
-    size: medium    
+    size: medium
+    buttons: 
+      - bold
+      - italic   
 
   additionalvideotitle:
     label: Additional Video Title
