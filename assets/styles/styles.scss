@@ -586,13 +586,13 @@ section#work {
 	.couple {
 		top: 49%;
 	}
-	.client, .couple {
-		font-weight: 700;
-		font-size: 14pt;
-	}
-	.title {
+	.client {
 		margin-top: 8px;
 		font-weight: 600;
+	}
+	.title, .couple {
+		font-weight: 700;
+		font-size: 14pt;
 	}
 }
 .overlay:hover {

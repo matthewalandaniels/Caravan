@@ -550,12 +550,12 @@ section#work {
     background-position: -351px -140px; }
   .overlay .couple {
     top: 49%; }
-  .overlay .client, .overlay .couple {
-    font-weight: 700;
-    font-size: 14pt; }
-  .overlay .title {
+  .overlay .client {
     margin-top: 8px;
     font-weight: 600; }
+  .overlay .title, .overlay .couple {
+    font-weight: 700;
+    font-size: 14pt; }
 
 .overlay:hover {
   opacity: 1; }
