@@ -18,7 +18,9 @@ Videolink: http://player.vimeo.com/video/36031564
 
 ----
 
-Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor ante leo, et aliquet 
+Description: **Lorem** ipsum dolor sit amet, consectetur adipiscing elit. In auctor ante leo, et aliquet
+ 
+
 augue. Donec dictum tincidunt enim, non dictum libero cursus eget. Phasellus faucibus 
 tempor velit, vitae molestie arcu mattis a. Praesent ultricies tincidunt velit, sit 
 amet ullamcorper elit convallis id. Sed a ligula vitae mi fermentum dignissim sodales 
