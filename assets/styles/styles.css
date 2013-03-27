@@ -47,6 +47,9 @@ a {
 input, textarea {
   display: block; }
 
+a {
+  color: #cf5e12; }
+
 body {
   background: #f3f3f3;
   font-family: 'Open Sans';
