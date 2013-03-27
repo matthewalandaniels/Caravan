@@ -28,7 +28,7 @@
       <div class=wrapper>
         <div class="description">
           <p class="title">Description</p>
-          <p class="text"><?php echo multiline($page->description()) ?></p>
+          <p class="text"><?php echo kirbytext($page->description()) ?></p>
           
           <div id="likeLinks">
             <div class="fb-like" data-send="false" data-layout="button_count" data-width="200" data-show-faces="true" data-font="lucida grande"></div>
