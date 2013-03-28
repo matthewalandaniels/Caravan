@@ -109,14 +109,16 @@ h2 {
     font-weight: 700;
     letter-spacing: .3em;
     margin-left: 15px;
-    padding: 20px 20px;
+    padding: 20px;
     -webkit-transition: color 0.2s 0s ease;
     -moz-transition: color 0.2s 0s ease;
     -o-transition: color 0.2s 0s ease;
     transition: color 0.2s 0s ease; }
-  #nav .current {
-    color: #7a1d09; }
+  #nav a:last-child {
+    padding-right: 0; }
   #nav a:hover {
+    color: #7a1d09; }
+  #nav .current {
     color: #7a1d09; }
 
 section {

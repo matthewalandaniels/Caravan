@@ -80,13 +80,16 @@ h2 {
 			font-weight: 700;
 			letter-spacing: .3em;
 			margin-left: 15px;
-			padding: 20px 20px;
+			padding: 20px;
 			@include transition(color, .2s);
 		}
-		.current {
-			color: $darkOrange;
+		a:last-child {
+			padding-right: 0;
 		}
 		a:hover {
+			color: $darkOrange;
+		}
+		.current {
 			color: $darkOrange;
 		}
 }
