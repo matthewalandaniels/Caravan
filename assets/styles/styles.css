@@ -378,6 +378,9 @@ section#contactDetails {
     position: relative;
     margin-right: 15px;
     background: url(../images/sprite_sheet.png) no-repeat; }
+  #contactPhone p, #contactEmail p, #contactLocation p {
+    margin: 0;
+    padding: 0; }
 
 #contactPhone .icon {
   top: 4px;
@@ -519,6 +522,9 @@ section#work {
   letter-spacing: .2em; }
   .workThumb img, .productionThumb img {
     display: block; }
+  .workThumb p, .productionThumb p {
+    margin: 0;
+    padding: 0; }
 
 .overlay {
   position: absolute;

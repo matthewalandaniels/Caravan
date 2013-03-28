@@ -384,6 +384,10 @@ section#contactDetails {
 	  margin-right: 15px;
 	  background: url(../images/sprite_sheet.png) no-repeat;
 	}
+	p {
+		margin: 0;
+		padding: 0;
+	}
 }
 
 #contactPhone {
@@ -557,6 +561,10 @@ section#work {
 	letter-spacing: .2em;
 	img {
 		display: block;
+  	}
+  	p {
+  		margin: 0;
+  		padding: 0;
   	}
 }
 
