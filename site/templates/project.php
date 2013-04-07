@@ -54,11 +54,11 @@
 	  
       <h1>Production Images</h1>
       <div id="container">
-			<?php foreach ($page->children()->find('production_images')->files() as $file): ?>			
+			<?php foreach ($page->children()->find('production_images')->files() as $file): ?>
 				<a href="<?php echo $file->url() ?>" class="fancybox productionThumb" rel="thumbs">
-				  <img src="<?php echo $file->url() ?>">
+				  <?php echo thumb($file, array('width' => 320)) ?>
 				  <div class="overlay">
-					<span class="more"></span>
+  					<span class="more"></span>
 				  </div>
 				</a>
 			<? endforeach ?>
