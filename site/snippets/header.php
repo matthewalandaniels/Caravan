@@ -5,6 +5,7 @@
 	<meta name="description" content="<?php echo $site->description() ?>">
 	<meta name="keywords" content="<?php echo $site->keywords() ?>">    
     <title><?php echo html($site->title()) ?></title>
+    <link rel="shortcut icon" href="<?php echo url('assets/images/favicon.ico') ?>">
     <link href="<?php echo url('assets/styles/styles.css') ?>" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <!--[if IE]>
