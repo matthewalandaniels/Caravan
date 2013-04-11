@@ -20,7 +20,7 @@
       <p id="workTitle"><?php echo $page->title() ?></p>
       <a href="<?php echo html($page->videolink()) ?>" class="fancybox-media playButton" title="<?php echo $page->title() ?>">Play</a>
       <?php if ( $page->children()->find('hero_image') ): ?>
-      <img src="<?php echo $page->children()->find('hero_image')->files()->first()->url() ?>" id="projectHeroImage" style=""/>
+      <img src="<?php echo $page->children()->find('hero_image')->files()->shuffle()->first()->url() ?>" id="projectHeroImage" style=""/>
       <?php endif ?>
     </div>
     
