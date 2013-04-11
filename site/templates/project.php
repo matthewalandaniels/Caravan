@@ -54,9 +54,9 @@
 	  
       <h1>Production Images</h1>
       <div id="container">
-			<?php foreach ($page->children()->find('production_images')->files() as $file): ?>
-				<a href="<?php echo $file->url() ?>" class="fancybox productionThumb" rel="thumbs">
-				  <?php echo thumb($file, array('width' => 320)) ?>
+			<?php foreach ($page->images() as $images): ?>
+				<a href="<?php echo thumb($images, array('width' => 960), false) ?>" class="fancybox productionThumb" rel="thumbs">
+				  <?php echo thumb($images, array('width' => 320)) ?>
 				  <div class="overlay">
   					<span class="more"></span>
 				  </div>
