@@ -20,7 +20,7 @@
       <p id="workTitle"><?php echo $page->title() ?></p>
       <a href="<?php echo html($page->videolink()) ?>" class="fancybox-media playButton" title="<?php echo $page->title() ?>">Play</a>
       <?php if ( $page->children()->find('hero_image') ): ?>
-      <img src="<?php echo $page->children()->find('hero_image')->files()->first()->url() ?>" id="projectHeroImage" style=""/>
+      <img src="<?php echo $page->children()->find('hero_image')->files()->shuffle()->first()->url() ?>" id="projectHeroImage" style=""/>
       <?php endif ?>
     </div>
     
@@ -54,11 +54,11 @@
 	  
       <h1>Production Images</h1>
       <div id="container">
-			<?php foreach ($page->children()->find('production_images')->files() as $file): ?>			
-				<a href="<?php echo $file->url() ?>" class="fancybox productionThumb" rel="thumbs">
-				  <img src="<?php echo $file->url() ?>">
+			<?php foreach ($page->images() as $images): ?>
+				<a href="<?php echo thumb($images, array('width' => 960), false) ?>" class="fancybox productionThumb" rel="thumbs">
+				  <?php echo thumb($images, array('width' => 320)) ?>
 				  <div class="overlay">
-					<span class="more"></span>
+  					<span class="more"></span>
 				  </div>
 				</a>
 			<? endforeach ?>
