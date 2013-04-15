@@ -445,3 +445,15 @@ array('.', '..', '.DS_Store', '.svn', '.git', '.htaccess');
 
 */
 c::set('content.file.ignore', array());
+
+
+/*
+
+---------------------------------------
+Thumb Plugin Settings
+---------------------------------------
+
+*/
+//c::set('thumb.cache.root', c::get('root') . '/assets/images/thumbs');
+
+
