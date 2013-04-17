@@ -16,11 +16,39 @@
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	<!--============================-->
 
+
+<?php 
+$images = $page->images();
+
+$heroImages = array();
+$productionImages = array();
+
+foreach ($images as $image) {
+  
+  // get our hero images
+  if (preg_match('/hero/i', $image->filename()) == 1) {
+    
+    $heroImages[] = $image->url();
+    
+  // get our production images
+  } else {
+    
+    $productionImages[] = $image;
+    
+  }
+  
+  // randomize our hero image if there is more than one
+  if (!empty($heroImages)) shuffle($heroImages);
+  if (!empty($productionImages)) shuffle($productionImages);
+  
+}
+?>
+
     <div class="projectHero">
       <p id="workTitle"><?php echo $page->title() ?></p>
       <a href="<?php echo html($page->videolink()) ?>" class="fancybox-media playButton" title="<?php echo $page->title() ?>">Play</a>
-      <?php if ( $page->children()->find('hero_image') ): ?>
-      <img src="<?php echo $page->children()->find('hero_image')->files()->shuffle()->first()->url() ?>" id="projectHeroImage" style=""/>
+      <?php if ( $heroImages ): ?>
+        <img src="<?php echo $heroImages[0]; ?>" id="projectHeroImage" style=""/>
       <?php endif ?>
     </div>
     
@@ -54,9 +82,9 @@
 	  
       <h1>Production Images</h1>
       <div id="container">
-			<?php foreach ($page->images() as $images): ?>
-				<a href="<?php echo thumb($images, array('width' => 960), false) ?>" class="fancybox productionThumb" rel="thumbs">
-				  <?php echo thumb($images, array('width' => 320)) ?>
+			<?php foreach ($productionImages as $productionImage): ?>
+				<a href="<?php echo thumb($productionImage, array('width' => 960), false) ?>" class="fancybox productionThumb" rel="thumbs">
+				  <?php echo thumb($productionImage, array('width' => 320)) ?>
 				  <div class="overlay">
   					<span class="more"></span>
 				  </div>

@@ -1,6 +1,6 @@
 title: Homepage
 pages: false
-files: false
+files: true
 fields:
 
   title: 
