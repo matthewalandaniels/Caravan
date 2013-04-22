@@ -314,7 +314,7 @@ php errors there.
 
 */
 
-c::set('debug', true);
+c::set('debug', false);
 
 
 /* 
