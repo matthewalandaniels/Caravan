@@ -31,7 +31,7 @@ foreach ($images as $image) {
     $heroImages[] = $image->url();
     
   // get our production images
-  } else {
+  } else if (preg_match('/thumb/i', $image->filename()) == 0) {
     
     $productionImages[] = $image;
     
