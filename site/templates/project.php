@@ -54,6 +54,15 @@ foreach ($images as $image) {
     
     <section id="projectDetails" class="clearfix">
       <div class=wrapper>
+
+        <div id="promotionLinks">
+          <div id="promotionLinksContainer">
+            <a href="#" class="twitter"><span></span></a>
+            <a href="#" class="facebook"><span></span></a>
+            <a href="#" class="pintrest"><span></span></a>
+          </div> 
+        </div>
+        
         <div class="description">
           <p class="title">Description</p>
           <p class="text"><?php echo kirbytext($page->description()) ?></p>
