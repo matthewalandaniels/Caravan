@@ -1,20 +1,19 @@
 <?php
 	// Ajax helper to validate the contents of a contact form and send an email
 	if ($_SERVER['REQUEST_METHOD'] === 'POST') { // meant for ajax requests
-		$name        = $_post['name'];
-		$phone       = $_post['phone'];
-		$email       = $_post['email'];
-		$weddingDate = $_post['weddingDate'];
-		$comments    = $_post['comments'];
+		$name        = $_POST['name'];
+		$phone       = $_POST['phone'];
+		$email       = $_POST['email'];
+		$weddingDate = $_POST['weddingDate'];
+		$comments    = $_POST['comments'];
 		
 		// todo: validate contents
 		
 		// todo: compose and send email
-		$to      = 'noamkatz@hotmail.com';
+		$to      = "hello@wearecaravan.tv";
 		$subject = "[contact form]: $name <$email>";
 		$message = 
-		'The following message was sent from the contact form at ' . date("F j, Y, g:i a") . ':' .
-		"\r\n" .
+		"The following message was sent from the contact form at " . date("F j, Y, g:i a") . ":\r\n\r\n" .
 		"Name: $name" . "\r\n" .
 		"Phone: $phone" . "\r\n" .
 		"Wedding Date: $weddingDate" . "\r\n\r\n" .
